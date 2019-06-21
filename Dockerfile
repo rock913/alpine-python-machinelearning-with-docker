@@ -24,8 +24,8 @@ RUN apk add --no-cache \
     \
     pip install numpy && \
     pip install pandas && \
-    pip install scipy && \
-    pip install scikit-learn && \
+#    pip install scipy && \
+#    pip install scikit-learn && \
     \
     rm -r /root/.cache && \
     find /usr/lib/python3.*/ -name 'tests' -exec rm -r '{}' + && \
