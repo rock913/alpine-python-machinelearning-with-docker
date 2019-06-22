@@ -23,9 +23,9 @@ RUN apk add --no-cache \
     ln -s locale.h /usr/include/xlocale.h && \
     \
     pip install numpy && \
-#    pip install pandas && \
-#    pip install scipy && \
-#    pip install scikit-learn && \
+    pip install pandas && \
+    pip install scipy && \
+    pip install scikit-learn==0.19.1 && \
     \
     rm -r /root/.cache && \
     find /usr/lib/python3.*/ -name 'tests' -exec rm -r '{}' + && \
